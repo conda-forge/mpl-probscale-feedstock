@@ -1,11 +1,10 @@
 package:
   name: mpl-probscale
-  version: 0.1.2
+  version: 0.2.0
 
 source:
-  fn: mpl-probscale-0.1.2.tar.gz
-  url: https://github.com/phobson/mpl-probscale/archive/v0.1.2.tar.gz
-  sha256: 92b7eac1f3a2e9ef5796cd2a8e5bb786b4c2511e1ccd3d6017aa0f33b839996d
+    git_url: https://github.com/phobson/mpl-probscale.git
+    git_tag: v0.2.0
 
 
 build:
@@ -21,18 +20,20 @@ requirements:
     - python
     - numpy
     - matplotlib
-    - nose
+    - pytest
 
 test:
   imports:
     - probscale
     
   requires:
-    - nose
+    - mock  # [py27]
+    - pytest
+    - pytest-mpl
     - scipy
 
   commands:
-    - python -c "import matplotlib; matplotlib.use('agg'); import probscale; probscale.test()"
+    - python -c "import sys; import matplotlib as mpl; mpl.use('agg'); import probscale as ps; sys.exit(ps.test('--mpl'))"
 
 about:
   home: http://phobson.github.io/mpl-probscale/
