@@ -1,10 +1,12 @@
+{% set version = "0.2.0" %}
+
 package:
   name: mpl-probscale
-  version: 0.2.0
+  version: {{ version }}
 
 source:
     git_url: https://github.com/phobson/mpl-probscale.git
-    git_tag: v0.2.0
+    git_tag: v{{ version }}
 
 
 build:
