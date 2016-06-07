@@ -27,7 +27,7 @@ test:
     - probscale
     
   requires:
-    - mock # [py27]
+    - mock  # [py27]
     - pytest
     - pytest-mpl
     - scipy
