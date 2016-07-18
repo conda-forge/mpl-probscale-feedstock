@@ -1,5 +1,6 @@
 {% set version = "0.2.2rc1" %}
 
+
 package:
   name: mpl-probscale
   version: {{ version }}
@@ -10,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   script: pip install . --no-deps
 
 requirements:
