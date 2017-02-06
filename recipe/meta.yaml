@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   script: pip install . --no-deps
 
 requirements:
@@ -36,7 +36,7 @@ test:
     - scipy
 
   commands:
-    - python -c "import sys; import matplotlib as mpl; mpl.use('agg'); import probscale as ps; sys.exit(ps.test('--mpl'))"
+    - python -c "import sys; import matplotlib as mpl; mpl.use('agg'); import probscale as ps; sys.exit(ps.test())"
 
 about:
   home: http://phobson.github.io/mpl-probscale/
