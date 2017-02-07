@@ -1,13 +1,13 @@
 {% set version = "0.2.2" %}
 
-
 package:
   name: mpl-probscale
   version: {{ version }}
 
 source:
-    git_url: https://github.com/phobson/mpl-probscale.git
-    git_tag: v{{ version }}
+  fn: mpl-probscale-{{ version }}.tar.gz
+  url: https://github.com/phobson/mpl-probscale/archive/v{{ version }}.tar.gz
+  sha256: 24c7b9b662608ebb29d28e9c0fbbef0772b25d42e9acfd95fdae67de9c08f67f
 
 
 build:
@@ -18,7 +18,6 @@ requirements:
   build:
     - python
     - setuptools
-
   run:
     - python
     - numpy
@@ -28,21 +27,20 @@ requirements:
 test:
   imports:
     - probscale
-
   requires:
     - mock  # [py27]
     - pytest
     - pytest-mpl
     - scipy
-
   commands:
     - python -c "import sys; import matplotlib as mpl; mpl.use('agg'); import probscale as ps; sys.exit(ps.test('--mpl'))"
 
 about:
   home: http://phobson.github.io/mpl-probscale/
   license:  BSD 3-clause
+  license_file: LICENSE
   summary: 'Probability scales for matplotlib.'
 
 extra:
-    recipe-maintainers:
-        - phobson
+  recipe-maintainers:
+    - phobson
