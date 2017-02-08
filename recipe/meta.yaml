@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     - numpy
-    - matplotlib
+    - matplotlib <2
     - pytest
 
 test:
