@@ -1,7 +1,7 @@
 About mpl-probscale
 ===================
 
-Home: http://phobson.github.io/mpl-probscale/
+Home: http://matplotlib.org/mpl-probscale/
 
 Package license: BSD 3-clause
 
