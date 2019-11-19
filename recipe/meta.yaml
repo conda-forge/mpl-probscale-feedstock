@@ -21,6 +21,8 @@ requirements:
     - python
     - numpy
     - matplotlib
+    # not really needed but the basic import imports the tests and needs this
+    - pytest
 
 test:
   imports:
