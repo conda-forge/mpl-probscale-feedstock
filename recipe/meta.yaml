@@ -5,13 +5,13 @@ package:
   version: {{ version }}
 
 source:
-  fn: mpl-probscale-{{ version }}.tar.gz
   url: https://github.com/matplotlib/mpl-probscale/archive/v{{ version }}.tar.gz
   sha256: 87e4ee63f484a9581ff06ae888e94827ea583d8f556ae5182bab85e714c0e5c1
 
 build:
-  number: 1000
-  script: pip install . --no-deps
+  number: 1001
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -21,24 +21,18 @@ requirements:
     - python
     - numpy
     - matplotlib
+    # not really needed but the basic import imports the tests and needs this
     - pytest
 
 test:
   imports:
     - probscale
-  requires:
-    - mock  # [py27]
-    - pytest
-    - pytest-mpl
-    - scipy
-  commands:
-    - python -c "import sys; import matplotlib as mpl; mpl.use('agg'); import probscale as ps; sys.exit(ps.test())"
 
 about:
   home: http://matplotlib.org/mpl-probscale/
-  license:  BSD 3-clause
+  license:  BSD-3-Clause
   license_file: LICENSE
-  summary: 'Probability scales for matplotlib.'
+  summary: 'Probability scales for matplotlib'
 
 extra:
   recipe-maintainers:

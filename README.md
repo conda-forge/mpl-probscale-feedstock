@@ -3,20 +3,26 @@ About mpl-probscale
 
 Home: http://matplotlib.org/mpl-probscale/
 
-Package license: BSD 3-clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Probability scales for matplotlib.
+Summary: Probability scales for matplotlib
 
 
 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/mpl-probscale-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/mpl-probscale-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/mpl-probscale-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/mpl-probscale-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/mpl-probscale-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/mpl-probscale-feedstock/branch/master)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=646&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/mpl-probscale-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -49,6 +55,8 @@ conda search mpl-probscale --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -104,3 +112,9 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@phobson](https://github.com/phobson/)
+
