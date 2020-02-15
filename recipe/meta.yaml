@@ -9,7 +9,7 @@ source:
   sha256: 87e4ee63f484a9581ff06ae888e94827ea583d8f556ae5182bab85e714c0e5c1
 
 build:
-  number: 1001
+  number: 1002
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -20,7 +20,7 @@ requirements:
   run:
     - python
     - numpy
-    - matplotlib
+    - matplotlib-base
     # not really needed but the basic import imports the tests and needs this
     - pytest
 
