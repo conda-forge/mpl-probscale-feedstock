@@ -1,4 +1,4 @@
-{% set version = "0.2.3" %}
+{% set version = "0.2.4" %}
 
 package:
   name: mpl-probscale
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/matplotlib/mpl-probscale/archive/v{{ version }}.tar.gz
-  sha256: 87e4ee63f484a9581ff06ae888e94827ea583d8f556ae5182bab85e714c0e5c1
+  sha256: bf28b9e0f75dba4ad833590aabbfb3196785c1e1fc755245ec350f970caa16a4
 
 build:
-  number: 1002
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -30,9 +30,9 @@ test:
 
 about:
   home: http://matplotlib.org/mpl-probscale/
-  license:  BSD-3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
-  summary: 'Probability scales for matplotlib'
+  summary: Probability scales for matplotlib
 
 extra:
   recipe-maintainers:
