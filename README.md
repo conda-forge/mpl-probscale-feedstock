@@ -5,7 +5,7 @@ Home: http://matplotlib.org/mpl-probscale/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Probability scales for matplotlib
 
