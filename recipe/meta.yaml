@@ -1,4 +1,4 @@
-{% set version = "0.2.5" %}
+{% set version = "0.3.0" %}
 
 package:
   name: mpl-probscale
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/matplotlib/mpl-probscale/archive/v{{ version }}.tar.gz
-  sha256: 34774f6560ba178adbc1ef10635e6e825bac46120fb2285622298e061f8c8016
+  sha256: 154d99886925588c6acbbbc52c52c46e7a984a801898a6e1404ebfe0c3a80207
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
