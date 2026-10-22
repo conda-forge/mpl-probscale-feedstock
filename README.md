@@ -3,11 +3,11 @@ About mpl-probscale-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mpl-probscale-feedstock/blob/main/LICENSE.txt)
 
-Home: http://matplotlib.org/mpl-probscale/
+Home: https://github.com/matplotlib/mpl-probscale
 
 Package license: BSD-3-Clause
 
-Summary: Probability scales for matplotlib
+Summary: mpl-probscale: Probability scales for matplotlib
 
 Current build status
 ====================
